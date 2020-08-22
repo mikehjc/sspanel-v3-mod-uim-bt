@@ -113,10 +113,10 @@ echo -e "${Info} 正在配置站点基本信息"
 cd /www/wwwroot/$website
 cp config/.config.php.for7color config/.config.php
 sed -i "s/websiteurl/$website/g" /www/wwwroot/$website/config/.config.php
-sed -i "s/sspanel-mukey-mikehu/$sspanelmukey/g" /www/wwwroot/$website/config/.config.php
-sed -i "s/sspanel-db-databasename-mikehu/$mysqldatabase/g" /www/wwwroot/$website/config/.config.php
-sed -i "s/sspanel-db-username-mikehu/$mysqlusername/g" /www/wwwroot/$website/config/.config.php
-sed -i "s/sspanel-db-password-mikehu/$mysqlpassword/g" /www/wwwroot/$website/config/.config.php
+sed -i "s/sspanel-mukey/$sspanelmukey/g" /www/wwwroot/$website/config/.config.php
+sed -i "s/sspanel-db-databasename/$mysqldatabase/g" /www/wwwroot/$website/config/.config.php
+sed -i "s/sspanel-db-username/$mysqlusername/g" /www/wwwroot/$website/config/.config.php
+sed -i "s/sspanel-db-password/$mysqlpassword/g" /www/wwwroot/$website/config/.config.php
 echo -e "${Info} 配置站点基本信息已完成"
 sleep 1
 ##下载IP解析库  下载ssr程式
